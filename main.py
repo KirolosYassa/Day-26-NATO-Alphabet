@@ -36,3 +36,8 @@ Nato_Alphabet_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 print(Nato_Alphabet_dict)
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
+word = input("Enter a word: ")
+
+words_of_NATO_Alphabet = [Nato_Alphabet_dict[letter.capitalize()] for letter in word]
+
+print(words_of_NATO_Alphabet)
